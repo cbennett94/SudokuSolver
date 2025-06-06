@@ -76,6 +76,7 @@ bool Board::checkRow(int theRow, int theVal)
 		if (theBoard[theRow][i] == theVal)
 		{
 			found = true;
+			break;
 		}
 	}
 	return found;
@@ -92,6 +93,7 @@ bool Board::checkCol(int theCol, int theVal)
 		if (theBoard[i][theCol] == theVal)
 		{
 			found = true;
+			break;
 		}
 	}
 	return found;
@@ -141,6 +143,7 @@ bool Board::checkBox(int theRow, int theCol, int theVal)
 			if (theBoard[rowBox+i][colBox+j] == theVal)
 			{
 				found = true;
+				break;
 			}
 		}
 	}
